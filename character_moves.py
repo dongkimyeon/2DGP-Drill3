@@ -63,7 +63,10 @@ def move_triangle_right():
 
 def move_triangle_left():
     print("Moving triangle left")
-
+    y = 70
+    for x in range(20, 400, 10):
+        y += 10
+        draw_character(x, y)
 
     pass
 
