@@ -6,15 +6,21 @@ open_canvas()
 character = load_image('character.png')
 
 def move_top():
+    print('Moving top')
+    for x in range(0,800,5):
+        draw_character(x,550)
     pass
 
 def move_left():
+    print('Moving left')
     pass
 
 def move_right():
+    print('Moving right')
     pass
 
 def move_bottom():
+    print('Moving bottom')
     pass
 
 def move_rectangle():
@@ -24,6 +30,12 @@ def move_rectangle():
     move_bottom()
     move_left()
     pass
+
+def draw_character(x: float, y: float):
+    clear_canvas_now()
+    character.draw_now(x, y)
+    delay(0.1)
+
 
 def move_circle():
     print("Moving circle")
@@ -39,7 +51,7 @@ def move_circle():
 
 while True:
     move_rectangle()
-    move_circle()
+    #move_circle()
     pass
 
 
