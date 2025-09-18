@@ -13,6 +13,8 @@ def move_top():
 
 def move_left():
     print('Moving left')
+    for y in range(25, 550, 10):
+        draw_character(0, y)
     pass
 
 def move_right():
@@ -47,15 +49,13 @@ def move_circle():
     for deg in range(0, 360):
         x = r * math.cos(math.radians(deg)) + 400
         y = r * math.sin(math.radians(deg)) + 300
-        clear_canvas_now()
-        character.draw_now(x, y)
-        delay(0.1)
+        draw_character(x, y)
     pass
 
 
 while True:
     move_rectangle()
-    #move_circle()
+    move_circle()
     pass
 
 
