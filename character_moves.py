@@ -23,6 +23,8 @@ def move_right():
 
 def move_bottom():
     print('Moving bottom')
+    for x in range(800, 0, -10):
+        draw_character(x, 25)
     pass
 
 def move_rectangle():
