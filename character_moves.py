@@ -63,10 +63,14 @@ def move_triangle_right():
 
 def move_triangle_left():
     print("Moving triangle left")
+
+
     pass
 
 def move_triangle_bottom():
     print("Moving triangle bottom")
+    for x in range(780, 20, -10):
+        draw_character(x, 70)
     pass
 
 
