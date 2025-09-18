@@ -7,7 +7,7 @@ character = load_image('character.png')
 
 def move_top():
     print('Moving top')
-    for x in range(0,800,5):
+    for x in range(0,800,10):
         draw_character(x,550)
     pass
 
@@ -17,6 +17,8 @@ def move_left():
 
 def move_right():
     print('Moving right')
+    for y in range(550, 25, -10):
+        draw_character(800, y)
     pass
 
 def move_bottom():
