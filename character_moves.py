@@ -1,11 +1,11 @@
-import pico2d
 from pico2d import *
+
 open_canvas()
 
 character = load_image('character.png')
 
 
-
+#제출을 위한 주석
 
 def draw_character(x: float, y: float):
     clear_canvas_now()
